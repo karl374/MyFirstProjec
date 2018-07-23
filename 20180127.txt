@@ -1,0 +1,41 @@
+http://localhost:7074/07.js编码函数.html      ——IE地址栏复制粘贴过来
+http://localhost:7074/07.js%E7%BC%96%E7%A0%81%E5%87%BD%E6%95%B0.html         ——Google地址栏赋值粘贴过俩，已经被浏览器进行编码处理
+
+---------------------------
+来自网页的消息
+---------------------------
+http://localhost:7074/07.js%E7%BC%96%E7%A0%81%E5%87%BD%E6%95%B0.html
+---------------------------
+确定   
+---------------------------
+
+---------------------------
+来自网页的消息
+---------------------------
+http%3A%2F%2Flocalhost%3A7074%2F07.js%E7%BC%96%E7%A0%81%E5%87%BD%E6%95%B0.html
+---------------------------
+确定   
+---------------------------
+
+http%3A%2F%2Flocalhost%3A7074%2F07.js%E7%BC%96%E7%A0%81%E5%87%BD%E6%95%B0.html
+
+
+
+20180208
+
+attribute:
+setAttribute()、getAttribute()、removeAttribute()
+一般用来设置自定义属性
+property:
+dom_obj.id、dom_obj.value、dom_obj.type、dom_obj.style等dom对象的原生属性。或者dom_obj['id']、dom_obj['value']等写法是一样的。
+
+    使用注意：一般attribute都是获取网页上直接写的属性的值，网页上怎么写的获取的就是什么值；而通过property获取的是经过计算后得
+
+到的值，比如checked="checked"通过getAttribute("checked");获取的是"checked"字符串，而通过dom_obj.checked获取的却是true。又比如
+
+：图片的src路径问题，通过getAttribute("src")获取的是设置到网页上的src的值，而通过dom_obj.src获取的是经过计算后的完整的src路径。
+在除IE的其他大多数浏览器下通过setAttribute()设置的属性是无法通过property来访问的，但是IE8下是可以的，所有有些混淆。
+
+jQuery1.6版本后prop()相当于通过property获取，而attr相当于通过setAttribute()或者getAttribute()
+
+
